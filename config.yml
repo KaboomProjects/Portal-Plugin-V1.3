@@ -1,0 +1,14 @@
+# Portal Cart Rod (/portalspawncentrecarts)
+carts:
+  per-portal: 50          # TNT carts each portal shoots out in total
+  per-burst: 1            # carts per portal per wave
+  interval-seconds: 1.0   # time between waves
+  explosion-power: 4.0    # also used by /portalspawntnt
+
+# /portalspawntnt
+tnt:
+  per-burst: 10           # carts per wave
+  interval-seconds: 1.0
+
+# Used rods (managed by the plugin, do not edit)
+consumed-rod-ids: []

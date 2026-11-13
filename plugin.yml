@@ -1,0 +1,35 @@
+name: PortalSpawn
+version: 1.2.0
+main: com.kodari.portalspawn.PortalSpawnPlugin
+api-version: '1.21'
+commands:
+  portalspawn:
+    description: Creates a one-use Portal Rod for spawning Nether portals.
+    usage: /portalspawn <X> <Y> <Z> <Amount>
+    permission: portalspawn.use
+  portalspawncentre:
+    description: Spawns portals within a 100-block radius of the specified coordinates in your current world.
+    usage: /portalspawncentre <X> <Y> <Z> <Amount>
+    permission: portalspawn.admin
+  portalspawncentrecarts:
+    description: Spawns portals around you (or given coordinates) and gives a one-use rod that launches TNT carts out of them.
+    usage: /portalspawncentrecarts [<X> <Y> <Z> <Amount>]
+    permission: portalspawn.admin
+  portalspawntnt:
+    description: Rains TNT minecarts down at random spots within a radius around you.
+    usage: /portalspawntnt <radius> [amount]
+    permission: portalspawn.admin
+  calculate:
+    description: Converts coordinates between the Overworld and Nether.
+    usage: /calculate <X> <Y> <Z> to <Nether|Overworld>
+    permission: portalspawn.calculate
+permissions:
+  portalspawn.use:
+    description: Allows use of /portalspawn.
+    default: op
+  portalspawn.calculate:
+    description: Allows use of /calculate.
+    default: op
+  portalspawn.admin:
+    description: Administrative permission for PortalSpawn.
+    default: op
